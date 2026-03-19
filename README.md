@@ -47,6 +47,30 @@ I passed the **Grade 5 Scholarship** in 2025 and have been actively participatin
 - Profile-focused layout with achievement highlights  
 - Custom cursor and smooth scroll effects  
 
+
 ---
 
-## 📂 Repository Structure
+## 📌 GitHub Pages
+
+The website is hosted using **GitHub Pages**:  
+[https://yourusername.github.io](https://yourusername.github.io)
+
+---
+
+## 💻 Technologies Used
+
+- HTML5 & CSS3  
+- JavaScript (Vanilla)  
+- Google Fonts (Cormorant Garamond, IBM Plex Sans, IBM Plex Mono)  
+
+---
+
+## ✨ License
+
+This project is **open for personal use and learning purposes**.  
+
+---
+
+## 📬 Contact
+
+You can reach me via GitHub: [@yourusername](https://github.com/yourusername)
