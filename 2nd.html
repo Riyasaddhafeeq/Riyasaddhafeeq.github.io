@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riyasad Dhafeeq — Student Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- BACKGROUND SCENE -->
+<div class="bg-scene">
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-orb orb-c"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-logo">RD <span>/ Portfolio</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#sports">Sports</a></li>
+    <li><a href="#competitions">Competitions</a></li>
+    <li><a href="#certifications">Certificates</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════
+     ABOUT / STUDENT PROFILE  (first section — no hero)
+═══════════════════════════════════════════════════ -->
+<section id="about" style="padding-top:110px;">
+  <div class="si">
+    <div class="s-mono"><span>01 /</span> Student Profile</div>
+    <h2 class="s-title">About <em>Me</em></h2>
+
+    <!-- 3-column layout: profile card | bio | highlights -->
+    <div class="profile-layout">
+
+      <!-- ── LEFT: Profile Image Card ── -->
+      <div class="profile-img-card acr acr-amber fu">
+        <div class="noise"></div>
+
+        <!-- spinning conic ring around photo -->
+        <div class="pic-shell">
+          <div class="pic-ring-outer"></div>
+          <div class="pic-ring-conic"></div>
+          <div class="pic-frame">
+            <!-- Replace src with your actual photo path e.g. src="riyasad.jpg" -->
+            <img
+              id="profilePhoto"
+              src="imgs.jpeg"
+              alt="Riyasad Dhafeeq"
+              onerror="this.style.display='none'; document.getElementById('profileEmoji').style.display='flex';"
+            />
+            <div id="profileEmoji" style="display:none; width:100%; height:100%; align-items:center; justify-content:center; font-size:5.5rem; background:linear-gradient(145deg,#0d1428,#12102a);">👦</div>
+          </div>
+          <div class="pic-live"></div>
+        </div>
+
+        <!-- Name & grade -->
+        <div class="pic-name">Riyasad Dhafeeq</div>
+        <div class="pic-grade">Grade 6 · English Medium</div>
+
+        <!-- School chips -->
+        <div class="pic-school acr acr-neutral">
+          <div class="noise"></div>
+          <span class="pic-school-ico">🏫</span>
+          <div>
+            <div class="pic-school-name">AK-AL/Arafa Vidyalaya</div>
+            <div class="pic-school-loc">Addalaichenai, Sri Lanka</div>
+          </div>
+        </div>
+
+        <!-- Stat row -->
+        <div class="pic-stats">
+          <div class="pic-stat">
+            <span class="pic-stat-n" data-target="9">9</span>
+            <span class="pic-stat-l">Certificates</span>
+          </div>
+          <div class="pic-stat-div"></div>
+          <div class="pic-stat">
+            <span class="pic-stat-n" data-target="3">0</span>
+            <span class="pic-stat-l">Medals</span>
+          </div>
+          <div class="pic-stat-div"></div>
+          <div class="pic-stat">
+            <span class="pic-stat-n">⭐</span>
+            <span class="pic-stat-l">Grade 5</span>
+          </div>
+        </div>
+
+        <!-- Upload hint -->
+        <div class="pic-upload-hint">
+          A <code>disciplined</code> and <code>ambitious student</code> balancing academic excellence and <code>athletic success.</code>
+        </div>
+
+        <!-- Download CV -->
+        <!-- <a class="btn-acr btn-primary-acr pic-cv" href="riyasad_acrylic.html" download>⬇ Download CV</a> -->
+      </div>
+
+      <!-- ── MIDDLE: Bio ── -->
+      <div class="about-body fu">
+        <p>My name is <strong>Riyasad Dhafeeq</strong>, a motivated and hardworking student currently in Grade 6 — English Medium — at <strong>AK-AL/Arafa Vidyalaya, Addalaichenai</strong>. From my very first day at KM/AK/Dr. Jalaldeen Vidyalaya, I have approached every lesson with curiosity and a genuine desire to grow.</p>
+        <p>My proudest academic milestone came when I successfully passed the <strong>Grade 5 Scholarship Examination in 2025</strong> — earning both a Presidential Scholarship and entry into the English Medium stream. These achievements reflect years of disciplined preparation and consistent effort.</p>
+        <p>Beyond the classroom I am a competitive athlete who has represented my house and school with honour — achieving gold at the <strong>Kids Athletics Championship</strong> for consecutive years. I believe every facet of student life — academic, athletic, and personal — deserves the same unwavering commitment.</p>
+        <div class="trait-chips">
+          <div class="chip">disciplined</div>
+          <div class="chip">competitive</div>
+          <div class="chip">curious</div>
+          <div class="chip">resilient</div>
+          <div class="chip">team player</div>
+          <div class="chip">bilingual</div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT: Highlights ── -->
+      <div class="hl-stack">
+        <div class="hl-item acr acr-amber fu"><div class="noise"></div><div class="hl-icon">🎯</div><div class="hl-text"><strong>Goal-Oriented Learner</strong><span>Scholarship passer with relentless drive</span></div></div>
+        <div class="hl-item acr acr-blue  fu"><div class="noise"></div><div class="hl-icon">🏃</div><div class="hl-text"><strong>Competitive Athlete</strong><span>Multi-year Kids Athletics champion</span></div></div>
+        <div class="hl-item acr acr-teal  fu"><div class="noise"></div><div class="hl-icon">🌍</div><div class="hl-text"><strong>English Medium Scholar</strong><span>Committed to bilingual excellence</span></div></div>
+        <div class="hl-item acr acr-plum  fu"><div class="noise"></div><div class="hl-icon">📖</div><div class="hl-text"><strong>Quran-Certified Student</strong><span>Completed at Al Mathrasathul Dharul Ilm</span></div></div>
+        <div class="hl-item acr acr-amber fu"><div class="noise"></div><div class="hl-icon">👑</div><div class="hl-text"><strong>Presidential Scholarship</strong><span>Outstanding all-round performance</span></div></div>
+      </div>
+
+    </div><!-- /profile-layout -->
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     EDUCATION
+═══════════════════════════════════════════════════ -->
+<section id="education">
+  <div class="si">
+    <div class="s-mono"><span>02 /</span> Academic Journey</div>
+    <h2 class="s-title">My <em>Education</em></h2>
+
+    <div class="edu-track">
+
+      <div class="edu-card acr acr-blue fu">
+        <div class="noise"></div>
+        <span class="edu-num">01</span>
+        <div class="edu-era">2021 – 2025 · Grades 1–5</div>
+        <div class="edu-name">KM/AK/Dr. Jalaldeen Vidyalaya</div>
+        <div class="edu-loc">Addalaichenai, Eastern Province, Sri Lanka</div>
+        <span class="edu-badge done">✅ Completed</span>
+        <p class="edu-desc">Built a strong academic foundation across all primary subjects. Participated in sports events, island-wide storytelling competitions, and extracurricular activities. Sat the Grade 5 Scholarship Examination with distinction.</p>
+      </div>
+
+      <div class="edu-card acr acr-amber active-edu fu">
+        <div class="noise"></div>
+        <span class="edu-num">02</span>
+        <div class="edu-era">2026 – Present · Grade 6</div>
+        <div class="edu-name">AK-AL/Arafa Vidyalaya</div>
+        <div class="edu-loc">Addalaichenai, Eastern Province · English Medium</div>
+        <span class="edu-badge now">⚡ Currently Studying</span>
+        <p class="edu-desc">Pursuing the English Medium stream following a successful Scholarship pass. Embracing advanced academics and extracurricular challenges with the same discipline and enthusiasm that has always defined my journey.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     ACHIEVEMENTS
+═══════════════════════════════════════════════════ -->
+<section id="achievements">
+  <div class="si">
+    <div class="s-mono"><span>03 /</span> Milestones</div>
+    <h2 class="s-title">Academic <span class="sky-txt">Achievements</span></h2>
+
+    <div class="ach-grid">
+      <div class="ach-card acr acr-amber fu">
+        <div class="noise"></div>
+        <div class="ach-glyph amber">🏆</div>
+        <div class="ach-yr">2025</div>
+        <div class="ach-name">Grade 5 Scholarship Examination</div>
+        <div class="ach-desc">Successfully passed one of Sri Lanka's most competitive primary academic milestones, demonstrating exceptional aptitude and years of dedicated preparation.</div>
+      </div>
+      <div class="ach-card acr acr-amber fu">
+        <div class="noise"></div>
+        <div class="ach-glyph amber">👑</div>
+        <div class="ach-yr">2025</div>
+        <div class="ach-name">Presidential Scholarship</div>
+        <div class="ach-desc">Awarded the Presidential Scholarship for excellent academic performance combined with outstanding achievements in sports and extracurricular leadership.</div>
+      </div>
+      <div class="ach-card acr acr-blue fu">
+        <div class="noise"></div>
+        <div class="ach-glyph sky">🌟</div>
+        <div class="ach-yr">Ongoing</div>
+        <div class="ach-name">English Medium Excellence</div>
+        <div class="ach-desc">Selected for the English Medium stream — a testament to academic aptitude and the ambition to pursue rigorous bilingual education at the next level.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     SPORTS
+═══════════════════════════════════════════════════ -->
+<section id="sports">
+  <div class="si">
+    <div class="s-mono"><span>04 /</span> On the Track</div>
+    <h2 class="s-title">Sports <em>Achievements</em></h2>
+
+    <div class="sp-grid">
+
+      <div class="sp-card acr acr-neutral fu">
+        <div class="noise"></div>
+        <div class="sp-head">
+          <div class="sp-ico">🏟️</div>
+          <div>
+            <div class="sp-title">Inter House Sports Meet</div>
+            <div class="sp-sub">2023 · Safa House Representative</div>
+          </div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>Rabbit Race</strong><span>1st Place · Safa House</span></div></div>
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>15m Sprint Race</strong><span>1st Place · Safa House</span></div></div>
+        </div>
+      </div>
+
+      <div class="sp-card acr acr-neutral fu">
+        <div class="noise"></div>
+        <div class="sp-head">
+          <div class="sp-ico">🏃</div>
+          <div>
+            <div class="sp-title">Kids Athletics Championship (Zonal level)</div>
+            <div class="sp-sub">2023 · 2024 · 2025</div>
+          </div>
+        </div>
+        <div class="sp-body">
+          <div class="sp-row"><div class="medal m3">🥉</div><div class="sp-ri"><strong>3rd Place</strong><span>Kids Athletics Championship 2023</span></div></div>
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>1st Place</strong><span>Kids Athletics Championship 2024</span></div></div>
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>1st Place</strong><span>Kids Athletics Championship 2025</span></div></div>
+          <div class="sp-row"><div class="medal m2">🥈</div><div class="sp-ri"><strong>2nd Place</strong><span>Kids Athletics Championship 2025</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     COMPETITIONS
+═══════════════════════════════════════════════════ -->
+<section id="competitions">
+  <div class="si">
+    <div class="s-mono"><span>05 /</span> Beyond Academics</div>
+    <h2 class="s-title">Competitions &amp; <span class="sky-txt">Events</span></h2>
+
+    <div class="comp-card acr acr-plum fu">
+      <div class="noise"></div>
+      <div class="comp-trophy-box">🎭</div>
+      <div>
+        <div class="comp-year">2021 · All Sri Lanka Tamil Primary Teachers Association</div>
+        <div class="comp-title">"Thulir Vidum Natrukkal" Story telling Competition</div>
+        <div class="comp-body">
+          Represented <strong style="color:var(--t1)">KM/AK/Dr. Jalaldeen Vidyalaya</strong> at this prestigious island-wide event. Delivered a compelling and imaginative performance showcasing creativity, stage presence, and exceptional communication skills on a national platform.
+        </div>
+        <div class="comp-place">🏅 Secured 8th Place — Island-wide Competition</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     CERTIFICATIONS
+═══════════════════════════════════════════════════ -->
+<section id="certifications">
+  <div class="si">
+    <div class="s-mono"><span>06 /</span> Recognition</div>
+    <h2 class="s-title">Certificates &amp; <em>Awards</em></h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-card acr acr-teal fu">
+        <div class="noise"></div>
+        <div class="cert-head">
+          <div class="cert-ico teal">📿</div>
+          <div>
+            <div class="cert-nm">Quran Completion Certificate</div>
+            <div class="cert-iss">Al Mathrasathul Dharul Ilm</div>
+          </div>
+        </div>
+        <span class="cert-yr-tag teal">📅 2023</span>
+      </div>
+
+      <div class="cert-card acr acr-amber fu">
+        <div class="noise"></div>
+        <div class="cert-head">
+          <div class="cert-ico amber">🎓</div>
+          <div>
+            <div class="cert-nm">Outstanding Performance – Scholarship Exam</div>
+            <div class="cert-iss">Dheen Hypermarket Pvt Ltd, Addalaichenai</div>
+          </div>
+        </div>
+        <span class="cert-yr-tag amber">📅 2025</span>
+      </div>
+
+      <div class="cert-card acr acr-blue fu">
+        <div class="noise"></div>
+        <div class="cert-head">
+          <div class="cert-ico sky">🌐</div>
+          <div>
+            <div class="cert-nm">English Workshop Participant Certificate</div>
+            <div class="cert-iss">American College of Studies</div>
+          </div>
+        </div>
+        <span class="cert-yr-tag sky">📅 2026</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════ -->
+<footer>
+  <div class="foot-name">Riyasad Dhafeeq <span>/ Student Portfolio</span></div>
+  <div class="foot-line"></div>
+  <p>Grade 6 · English Medium · <strong>AK-AL/Arafa Vidyalaya, Addalaichenai</strong></p>
+  <p style="margin-top:8px;font-size:.76rem;">© 2025 – 2026. All Rights Reserved. Crafted with precision &amp; purpose.</p>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════ -->
+<script>
+  /* ── Particle Constellation ──────────── */
+  (function(){
+    const cv = document.getElementById('hero-canvas');
+    if(!cv) return;
+    const ctx = cv.getContext('2d');
+    let W, H, pts=[];
+    function resize(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; }
+    resize(); window.addEventListener('resize', resize);
+
+    const N=90;
+    for(let i=0;i<N;i++) pts.push({
+      x:Math.random()*W, y:Math.random()*H,
+      vx:(Math.random()-.5)*.35, vy:(Math.random()-.5)*.35,
+      r:Math.random()*1.5+.4,
+      a:Math.random()*.8+.2
+    });
+
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      // Lines
+      for(let i=0;i<pts.length;i++){
+        for(let j=i+1;j<pts.length;j++){
+          const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y;
+          const d=Math.sqrt(dx*dx+dy*dy);
+          if(d<120){
+            ctx.beginPath();
+            ctx.moveTo(pts[i].x,pts[i].y);
+            ctx.lineTo(pts[j].x,pts[j].y);
+            ctx.strokeStyle=`rgba(245,158,11,${(1-d/120)*.12})`;
+            ctx.lineWidth=.6; ctx.stroke();
+          }
+        }
+      }
+      // Dots
+      pts.forEach(p=>{
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fillStyle=`rgba(245,158,11,${p.a*.6})`;
+        ctx.fill();
+        p.x+=p.vx; p.y+=p.vy;
+        if(p.x<0||p.x>W) p.vx*=-1;
+        if(p.y<0||p.y>H) p.vy*=-1;
+      });
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+
+  /* ── Typewriter role cycling ──────────── */
+  (function(){
+    const el = document.getElementById('roleText');
+    if(!el) return;
+    const roles=['Academic Achiever','Dedicated Student','Young Athlete','Presidential Scholar','Quran Graduate','Public Speaker'];
+    let ri=0, ci=0, deleting=false;
+    function tick(){
+      const full=roles[ri];
+      if(!deleting){
+        el.textContent=full.slice(0,++ci);
+        if(ci===full.length){ deleting=true; setTimeout(tick,1800); return; }
+        setTimeout(tick,80);
+      } else {
+        el.textContent=full.slice(0,--ci);
+        if(ci===0){ deleting=false; ri=(ri+1)%roles.length; setTimeout(tick,400); return; }
+        setTimeout(tick,40);
+      }
+    }
+    tick();
+  })();
+
+  /* ── Counter animation ────────────────── */
+  (function(){
+    const els=document.querySelectorAll('[data-target]');
+    const io2=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(!e.isIntersecting) return;
+        const el=e.target, target=+el.dataset.target;
+        let n=0; const step=Math.ceil(target/30);
+        const t=setInterval(()=>{
+          n=Math.min(n+step,target);
+          el.textContent=n+(target===9?'+':'');
+          if(n>=target) clearInterval(t);
+        },55);
+        io2.unobserve(el);
+      });
+    },{threshold:.5});
+    els.forEach(el=>io2.observe(el));
+  })();
+
+  /* ── Cursor ───────────────────────────── */
+  const dot  = document.getElementById('cur-dot');
+  const ring = document.getElementById('cur-ring');
+  let mx=0,my=0, rx=0,ry=0;
+  document.addEventListener('mousemove', e=>{ mx=e.clientX; my=e.clientY; dot.style.cssText=`left:${mx}px;top:${my}px`; });
+  (function trackRing(){
+    rx+=(mx-rx)*.11; ry+=(my-ry)*.11;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    requestAnimationFrame(trackRing);
+  })();
+
+  /* ── Nav scroll shadow ─────────────────── */
+  const nav=document.getElementById('navbar');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
+
+  /* ── Hamburger ─────────────────────────── */
+  function toggleMenu(){ document.getElementById('navLinks').classList.toggle('open'); }
+  document.querySelectorAll('.nav-links a').forEach(a=>
+    a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+
+  /* ── Intersection observer (fade-up) ───── */
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.08});
+  document.querySelectorAll('.fu').forEach(el=>io.observe(el));
+
+  /* ── Active nav link ───────────────────── */
+  const secs=document.querySelectorAll('section[id]');
+  const navAs=document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll',()=>{
+    let cur='';
+    secs.forEach(s=>{ if(scrollY>=s.offsetTop-80) cur=s.id; });
+    navAs.forEach(a=>{ a.style.color=a.getAttribute('href')==='#'+cur?'var(--amber)':''; });
+  });
+
+  /* ── Acrylic Reveal Mouse Effect ─────────
+     Subtle radial highlight that follows the mouse inside acrylic cards */
+  document.querySelectorAll('.acr').forEach(card=>{
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const x=((e.clientX-r.left)/r.width *100).toFixed(1);
+      const y=((e.clientY-r.top) /r.height*100).toFixed(1);
+      card.style.setProperty('--rx',x+'%');
+      card.style.setProperty('--ry',y+'%');
+      card.style.backgroundImage=
+        `radial-gradient(280px circle at ${x}% ${y}%, rgba(255,255,255,.045), transparent 65%)`;
+    });
+    card.addEventListener('mouseleave',()=>{ card.style.backgroundImage=''; });
+  });
+</script>
+</body>
+</html>
