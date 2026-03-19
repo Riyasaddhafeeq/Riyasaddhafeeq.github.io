@@ -1,6 +1,6 @@
 # Riyasad Dhafeeq — Student Portfolio
 
-![Portfolio Banner](https://via.placeholder.com/1200x300?text=Riyasad+Dhafeeq+Portfolio)
+![Portfolio Banner](https://github.com/user-attachments/assets/91aabb0e-6f14-4838-ac6c-b996ef537f27)
 
 Welcome to my personal **student portfolio website**! This website highlights my **academic achievements**, **sports performance**, and **educational journey** as a Grade 6 student.
 
@@ -53,7 +53,7 @@ I passed the **Grade 5 Scholarship** in 2025 and have been actively participatin
 ## 📌 GitHub Pages
 
 The website is hosted using **GitHub Pages**:  
-[https://yourusername.github.io](https://yourusername.github.io)
+[https://yourusername.github.io](https://riyasaddhafeeq.github.io/)
 
 ---
 
@@ -63,11 +63,7 @@ The website is hosted using **GitHub Pages**:
 - JavaScript (Vanilla)  
 - Google Fonts (Cormorant Garamond, IBM Plex Sans, IBM Plex Mono)  
 
----
-
-## ✨ License
-
-This project is **open for personal use and learning purposes**.  
+ 
 
 ---
 
