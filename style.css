@@ -1850,13 +1850,14 @@ footer strong {
     top: 0;
     right: 0;
     bottom: 0;
+    height: 680%;
     width: 280px;
     background: rgba(8, 13, 28, 0.97);
     backdrop-filter: var(--blur);
     padding: 80px 28px 32px;
     border-left: 1px solid var(--bdr-mid);
     transform: translateX(100%);
-    transition: transform 0.35s;
+    transition: transform 0.4s ease;
     z-index: 600;
   }
   .nav-links.open {
@@ -1867,6 +1868,8 @@ footer strong {
     padding: 16px 0;
     font-size: 0.85rem;
     border-bottom: 1px solid var(--bdr-lo);
+    display: block;
+    width: 100%;
   }
   .hamburger {
     display: flex;
