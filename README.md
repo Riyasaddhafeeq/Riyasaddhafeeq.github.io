@@ -69,4 +69,4 @@ The website is hosted using **GitHub Pages**:
 
 ## 📬 Contact
 
-You can reach me via GitHub: [@Riyasaddhafeeq](https://github.com/Riyasaddhafeeq)
+You can reach me via GitHub: [@Riyasad Dhafeeq](https://github.com/Riyasaddhafeeq)
