@@ -3,26 +3,18 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Riyazad Dhafeeq — Frontend Web Developer | Portfolio</title>
-  <meta name="description" content="Frontend web developer portfolio of Riyazad Dhafeeq. Specializing in responsive websites, JavaScript, React, and modern UI/UX from Sri Lanka.">
-  <meta name="keywords" content="Frontend Developer Sri Lanka, Web Developer Portfolio, JavaScript Developer, Responsive Web Designer, UI/UX Developer, Riyazad Dhafeeq">
-
-  <meta property="og:title" content="Riyazad Dhafeeq — Frontend Web Developer">
-  <meta property="og:description" content="Portfolio of Riyazad Dhafeeq, a frontend web developer from Sri Lanka specializing in modern, responsive web experiences.">
+  <title>Riyasad Dhafeeq — Student Profile</title>
+  <meta property="og:title" content="Riyasad Dhafeeq — Student Portfolio">
+  <meta property="og:description" content="Grade 6 student at AK-AL/Arafa Vidyalaya. Scholarship passer, athlete, and aspiring achiever.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://riyasaddhafeeq.github.io">
-  <meta property="og:image" content="https://riyasaddhafeeq.github.io/apple-touch-icon.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Riyazad Dhafeeq — Frontend Web Developer">
-  <meta name="twitter:description" content="Frontend web developer from Sri Lanka. Building modern, responsive web experiences.">
-
+  <meta name="description" content="Personal student portfolio of Riyasad Dhafeeq — Grade 6, AK-AL/Arafa Vidyalaya, Addalaichenai.">
   <meta name="google-site-verification" content="Mh81cgSYC2QB9mU8aBi5pJXZfPJNmb_bSrEe3QzcAxk" />
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon-96x96.png" type="image/png" sizes="96x96">
   <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- Google tag (gtag.js) -->
@@ -32,20 +24,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-NBJ9QLR64V');
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Riyazad Dhafeeq",
-    "jobTitle": "Frontend Web Developer",
-    "url": "https://riyasaddhafeeq.github.io",
-    "sameAs": [
-      "https://github.com/Riyasaddhafeeq",
-      "https://linkedin.com/in/riyasaddhafeeq"
-    ],
-    "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Responsive Web Design", "UI/UX Development"]
-  }
   </script>
 </head>
 <body>
@@ -65,14 +43,14 @@
      NAV
 ═══════════════════════════════════════════════════ -->
 <nav id="navbar" aria-label="Main navigation">
-  <a href="/" class="nav-logo">
-    <img src="logo.svg" alt="Riyazad Dhafeeq" height="28" class="nav-logo-img">
-  </a>
+  <a href="/" class="nav-logo">RD <span>/ Portfolio</span></a>
   <ul class="nav-links" id="navLinks" role="list">
     <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#services">Services</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#sports">Sports</a></li>
+    <li><a href="#competitions">Competitions</a></li>
+    <li><a href="#certifications">Certificates</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
@@ -81,84 +59,173 @@
 </nav>
 
 <!-- ═══════════════════════════════════════════════════
-     HERO
+     ABOUT / STUDENT PROFILE  (first section — no hero)
 ═══════════════════════════════════════════════════ -->
-<section id="hero">
-  <div class="hero-content">
-    <p class="hero-kicker">&lt;hello_world /&gt;</p>
-    <h1 class="hero-name">
-      Riyazad <span class="hero-name-grad">Dhafeeq</span>
-    </h1>
-    <p class="hero-title">Frontend Web Developer</p>
-    <p class="hero-desc">Building modern, responsive, and performant web experiences from Sri Lanka.</p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="#contact" class="btn-secondary">Hire Me</a>
-    </div>
-    <div class="hero-social">
-      <a href="https://github.com/Riyasaddhafeeq" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-      </a>
-      <a href="https://linkedin.com/in/riyasaddhafeeq" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="mailto:riyazad@email.com" aria-label="Email">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      </a>
-    </div>
-  </div>
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
+<section id="about" style="padding-top:80px;">
+  <div class="si">
+    <div class="s-mono"><span>01 /</span> Student Profile</div>
+    <h2 class="s-title">About <em>Me</em></h2>
+
+    <!-- 3-column layout: profile card | bio | highlights -->
+    <div class="profile-layout">
+
+      <!-- ── LEFT: Profile Image Card ── -->
+      <div class="profile-img-card acr acr-amber fu">
+        <div class="noise"></div>
+
+        <!-- spinning conic ring around photo -->
+        <div class="pic-shell">
+          <div class="pic-ring-outer"></div>
+          <div class="pic-ring-conic"></div>
+          <div class="pic-frame">
+            <!-- Replace src with your actual photo path e.g. src="riyasad.jpg" -->
+            <img
+              id="profilePhoto"
+              src="imgs.jpeg"
+              alt="Riyasad Dhafeeq"
+              onerror="this.style.display='none'; document.getElementById('profileEmoji').style.display='flex';"
+            />
+            <div id="profileEmoji" style="display:none; width:100%; height:100%; align-items:center; justify-content:center; font-size:5.5rem; background:linear-gradient(145deg,#0d1428,#12102a);">👦</div>
+          </div>
+          <div class="pic-live"></div>
+        </div>
+
+        <!-- Name & grade -->
+        <div class="pic-name">Riyasad Dhafeeq</div>
+        <div class="pic-grade">Grade 6 · English Medium</div>
+
+        <!-- School chips -->
+        <div class="pic-school acr acr-neutral">
+          <div class="noise"></div>
+          <span class="pic-school-ico">🏫</span>
+          <div>
+            <div class="pic-school-name">AK-AL/Arafa Vidyalaya</div>
+            <div class="pic-school-loc">Addalaichenai, Sri Lanka</div>
+          </div>
+        </div>
+
+        <!-- Stat row -->
+        <div class="pic-stats">
+          <div class="pic-stat">
+            <span class="pic-stat-n" data-target="9">9</span>
+            <span class="pic-stat-l">Certificates</span>
+          </div>
+          <div class="pic-stat-div"></div>
+          <div class="pic-stat">
+            <span class="pic-stat-n" data-target="3">0</span>
+            <span class="pic-stat-l">Medals</span>
+          </div>
+          <div class="pic-stat-div"></div>
+          <div class="pic-stat">
+            <span class="pic-stat-n">⭐</span>
+            <span class="pic-stat-l">Grade 5</span>
+          </div>
+        </div>
+
+        <!-- Upload hint -->
+        <div class="pic-upload-hint">
+          A <code>disciplined</code> and <code>ambitious student</code> balancing academic excellence and <code>athletic success.</code>
+        </div>
+
+        <!-- Download CV -->
+        <!-- <a class="btn-acr btn-primary-acr pic-cv" href="riyasad_acrylic.html" download>⬇ Download CV</a> -->
+      </div>
+
+      <!-- ── MIDDLE: Bio ── -->
+      <div class="about-body fu">
+        <p>My name is <strong>Riyasad Dhafeeq</strong>, a motivated and hardworking student currently in Grade 6 — English Medium — at <strong>AK-AL/Arafa Vidyalaya, Addalaichenai</strong>. From my very first day at KM/AK/Dr. Jalaldeen Vidyalaya, I have approached every lesson with curiosity and a genuine desire to grow.</p>
+        <p>My proudest academic milestone came when I successfully passed the <strong>Grade 5 Scholarship Examination in 2025</strong> — earning both a Presidential Scholarship and entry into the English Medium stream. These achievements reflect years of disciplined preparation and consistent effort.</p>
+        <p>Beyond the classroom I am a competitive athlete who has represented my house and school with honour — achieving gold at the <strong>Kids Athletics Championship</strong> for consecutive years. I believe every facet of student life — academic, athletic, and personal — deserves the same unwavering commitment.</p>
+        <div class="trait-chips">
+          <div class="chip">disciplined</div>
+          <div class="chip">competitive</div>
+          <div class="chip">curious</div>
+          <div class="chip">resilient</div>
+          <div class="chip">team player</div>
+          <div class="chip">bilingual</div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT: Highlights ── -->
+      <div class="hl-stack">
+        <div class="hl-item acr acr-amber fu"><div class="noise"></div><div class="hl-icon">🎯</div><div class="hl-text"><strong>Goal-Oriented Learner</strong><span>Scholarship passer with relentless drive</span></div></div>
+        <div class="hl-item acr acr-blue  fu"><div class="noise"></div><div class="hl-icon">🏃</div><div class="hl-text"><strong>Competitive Athlete</strong><span>Multi-year Kids Athletics champion</span></div></div>
+        <div class="hl-item acr acr-teal  fu"><div class="noise"></div><div class="hl-icon">🌍</div><div class="hl-text"><strong>English Medium Scholar</strong><span>Committed to bilingual excellence</span></div></div>
+        <div class="hl-item acr acr-plum  fu"><div class="noise"></div><div class="hl-icon">📖</div><div class="hl-text"><strong>Quran-Certified Student</strong><span>Completed at Al Mathrasathul Dharul Ilm</span></div></div>
+        <div class="hl-item acr acr-amber fu"><div class="noise"></div><div class="hl-icon">👑</div><div class="hl-text"><strong>Presidential Scholarship</strong><span>Outstanding all-round performance</span></div></div>
+      </div>
+
+    </div><!-- /profile-layout -->
   </div>
 </section>
 
+<div class="strip"></div>
+
 <!-- ═══════════════════════════════════════════════════
-     ABOUT
+     EDUCATION
 ═══════════════════════════════════════════════════ -->
-<section id="about">
+<section id="education">
   <div class="si">
-    <div class="s-mono"><span>01 /</span> About</div>
-    <h2 class="s-title">Who <em>I Am</em></h2>
-    <div class="about-grid">
-      <div class="about-text fu">
-        <p>I'm <strong>Riyazad Dhafeeq</strong>, a frontend web developer based in Sri Lanka with a passion for crafting clean, performant, and accessible web interfaces. I specialize in turning complex problems into simple, beautiful, and intuitive designs.</p>
-        <p>My journey into development started with curiosity about how websites work and evolved into a full-fledged passion for building modern web experiences. I work primarily with <strong>HTML, CSS, JavaScript, and React</strong>, always focusing on responsive design and user experience.</p>
-        <p>When I'm not coding, I'm exploring new technologies, contributing to open-source, and finding ways to make the web a better place — one component at a time.</p>
-        <div class="about-stats">
-          <div class="about-stat">
-            <span class="about-stat-n" data-target="3">0</span>
-            <span class="about-stat-l">Years Learning</span>
-          </div>
-          <div class="about-stat">
-            <span class="about-stat-n" data-target="10">0</span>
-            <span class="about-stat-l">Projects Built</span>
-          </div>
-          <div class="about-stat">
-            <span class="about-stat-n" data-target="5">0</span>
-            <span class="about-stat-l">Technologies</span>
-          </div>
-        </div>
-      </div>
-      <div class="about-card acr acr-blue fu">
+    <div class="s-mono"><span>02 /</span> Academic Journey</div>
+    <h2 class="s-title">My <em>Education</em></h2>
+
+    <div class="edu-track">
+
+      <div class="edu-card acr acr-blue fu">
         <div class="noise"></div>
-        <div class="acd-item">
-          <span class="acd-label">Name</span>
-          <span class="acd-value">Riyazad Dhafeeq</span>
-        </div>
-        <div class="acd-item">
-          <span class="acd-label">Role</span>
-          <span class="acd-value">Frontend Developer</span>
-        </div>
-        <div class="acd-item">
-          <span class="acd-label">Location</span>
-          <span class="acd-value">Sri Lanka</span>
-        </div>
-        <div class="acd-item">
-          <span class="acd-label">Focus</span>
-          <span class="acd-value">Web & UI/UX</span>
-        </div>
-        <a href="mailto:riyazad@email.com" class="btn-primary acd-btn">Hire Me</a>
+        <span class="edu-num">01</span>
+        <div class="edu-era">2021 – 2025 · Grades 1–5</div>
+        <div class="edu-name">KM/AK/Dr. Jalaldeen Vidyalaya</div>
+        <div class="edu-loc">Addalaichenai, Eastern Province, Sri Lanka</div>
+        <span class="edu-badge done">✅ Completed</span>
+        <p class="edu-desc">Built a strong academic foundation across all primary subjects. Participated in sports events, island-wide storytelling competitions, and extracurricular activities. Sat the Grade 5 Scholarship Examination with distinction.</p>
+      </div>
+
+      <div class="edu-card acr acr-amber active-edu fu">
+        <div class="noise"></div>
+        <span class="edu-num">02</span>
+        <div class="edu-era">2026 – Present · Grade 6</div>
+        <div class="edu-name">AK-AL/Arafa Vidyalaya</div>
+        <div class="edu-loc">Addalaichenai, Eastern Province · English Medium</div>
+        <span class="edu-badge now">⚡ Currently Studying</span>
+        <p class="edu-desc">Pursuing the English Medium stream following a successful Scholarship pass. Embracing advanced academics and extracurricular challenges with the same discipline and enthusiasm that has always defined my journey.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     ACHIEVEMENTS
+═══════════════════════════════════════════════════ -->
+<section id="achievements">
+  <div class="si">
+    <div class="s-mono"><span>03 /</span> Milestones</div>
+    <h2 class="s-title">Academic <span class="sky-txt">Achievements</span></h2>
+
+    <div class="ach-grid">
+      <div class="ach-card acr acr-amber fu">
+        <div class="noise"></div>
+        <div class="ach-glyph amber">🏆</div>
+        <div class="ach-yr">2025</div>
+        <div class="ach-name">Grade 5 Scholarship Examination</div>
+        <div class="ach-desc">Successfully passed one of Sri Lanka's most competitive primary academic milestones, demonstrating exceptional aptitude and years of dedicated preparation.</div>
+      </div>
+      <div class="ach-card acr acr-amber fu">
+        <div class="noise"></div>
+        <div class="ach-glyph amber">👑</div>
+        <div class="ach-yr">2025</div>
+        <div class="ach-name">Presidential Scholarship</div>
+        <div class="ach-desc">Awarded the Presidential Scholarship for excellent academic performance combined with outstanding achievements in sports and extracurricular leadership.</div>
+      </div>
+      <div class="ach-card acr acr-blue fu">
+        <div class="noise"></div>
+        <div class="ach-glyph sky">🌟</div>
+        <div class="ach-yr">Ongoing</div>
+        <div class="ach-name">English Medium Excellence</div>
+        <div class="ach-desc">Selected for the English Medium stream — a testament to academic aptitude and the ambition to pursue rigorous bilingual education at the next level.</div>
       </div>
     </div>
   </div>
@@ -167,60 +234,71 @@
 <div class="strip"></div>
 
 <!-- ═══════════════════════════════════════════════════
-     SKILLS
+     SPORTS
 ═══════════════════════════════════════════════════ -->
-<section id="skills">
+<section id="sports">
   <div class="si">
-    <div class="s-mono"><span>02 /</span> Expertise</div>
-    <h2 class="s-title">My <em>Skills</em></h2>
-    <div class="skills-grid">
-      <div class="skill-card acr acr-blue fu">
+    <div class="s-mono"><span>04 /</span> On the Track</div>
+    <h2 class="s-title">Sports <em>Achievements</em></h2>
+
+    <div class="sp-grid">
+
+      <div class="sp-card acr acr-neutral fu">
         <div class="noise"></div>
-        <div class="skill-icon-box" style="--sc:var(--sky)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+        <div class="sp-head">
+          <div class="sp-ico">🏟️</div>
+          <div>
+            <div class="sp-title">Inter House Sports Meet</div>
+            <div class="sp-sub">2023 · Safa House Representative</div>
+          </div>
         </div>
-        <h3 class="skill-name">HTML & CSS</h3>
-        <p class="skill-desc">Semantic markup, responsive layouts, Flexbox/Grid, animations, and modern CSS architecture.</p>
+        <div class="sp-body">
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>Rabbit Race</strong><span>1st Place · Safa House</span></div></div>
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>15m Sprint Race</strong><span>1st Place · Safa House</span></div></div>
+        </div>
       </div>
-      <div class="skill-card acr acr-blue fu">
+
+      <div class="sp-card acr acr-neutral fu">
         <div class="noise"></div>
-        <div class="skill-icon-box" style="--sc:var(--amber)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-.93-2.534-.885-1.294.06-2.28.69-2.746 1.635-.165.33-.3.705-.3 1.395 0 .3.015.585.075.87.466 1.665 1.765 2.205 3.225 2.625.825.225 1.605.465 1.89.855.255.405.15.975-.585 1.17-.63.18-1.32.12-1.89-.27-.165-.105-.3-.285-.45-.555-1.065.615-1.065.615-1.8 1.125.135.3.405.645.69.93.825.825 2.115 1.05 3.51.84 1.545-.225 2.55-.915 3.03-1.91.405-.855.195-1.98-.195-2.52-.03-.045-.06-.075-.105-.105zm-2.359-5.354c-.345-.9-.15-1.575.15-2.115.405-.675.675-1.35.54-2.385-.405-.015-.735-.075-1.05-.225-2.61-1.08-4.335-3.915-4.455-3.915l.015.015c-.06-.09-.12-.165-.195-.255-.705-.885-1.815-1.5-3.105-1.5-1.095 0-2.07.405-2.73 1.065l-1.575-1.26 1.08.915c-.135.15-.255.315-.36.495-.15.27-.27.54-.36.825-1.29.12-2.445.63-3.27 1.485-1.14 1.185-1.5 2.85-.81 4.275.495 1.02 1.41 1.86 2.46 2.385.015 0 .03.015.045.015.165.09.33.165.51.225.135.285.21.585.21.9 0 .57-.345 1.02-.81 1.185-.69.24-1.44.015-1.89-.39-.33-.285-.555-.705-.705-1.125h-1.8c.03.495.165.975.405 1.395.39.66 1.005 1.155 1.785 1.365 1.035.27 2.235.075 3.045-.51.585-.42.93-1.035 1.065-1.755.09-.555.03-1.125-.21-1.635-.165-.36-.375-.675-.63-.945.015 0 .015-.015.03-.015.075-.09.15-.165.24-.255.81-.825 1.695-1.44 2.76-1.83-.15.645-.09 1.35.255 1.98.405.72 1.125 1.125 1.89 1.245.495.075 1.02 0 1.47-.165.315-.12.585-.285.81-.495.06.105.12.195.21.285.66.645 1.725.705 2.475.225.27-.165.495-.405.645-.675.345-.585.81-1.065 1.425-1.335l.03-.015c-.015-.45-.12-.87-.3-1.23z"/></svg>
+        <div class="sp-head">
+          <div class="sp-ico">🏃</div>
+          <div>
+            <div class="sp-title">Kids Athletics Championship (Zonal level)</div>
+            <div class="sp-sub">2023 · 2024 · 2025</div>
+          </div>
         </div>
-        <h3 class="skill-name">JavaScript</h3>
-        <p class="skill-desc">ES6+, DOM manipulation, async/await, APIs, and modern JavaScript patterns and tooling.</p>
+        <div class="sp-body">
+          <div class="sp-row"><div class="medal m3">🥉</div><div class="sp-ri"><strong>3rd Place</strong><span>Kids Athletics Championship 2023</span></div></div>
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>1st Place</strong><span>Kids Athletics Championship 2024</span></div></div>
+          <div class="sp-row"><div class="medal m1">🥇</div><div class="sp-ri"><strong>1st Place</strong><span>Kids Athletics Championship 2025</span></div></div>
+          <div class="sp-row"><div class="medal m2">🥈</div><div class="sp-ri"><strong>2nd Place</strong><span>Kids Athletics Championship 2025</span></div></div>
+        </div>
       </div>
-      <div class="skill-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="skill-icon-box" style="--sc:var(--sky)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 01-2.235 2.236 2.236 2.236 0 01-2.236-2.236 2.236 2.236 0 012.235-2.236 2.236 2.236 0 012.236 2.236zm2.648-1.065c.012.351.012.702 0 1.054l2.313 1.809a.557.557 0 01.127.702l-2.19 3.79a.553.553 0 01-.664.24l-2.727-1.098c-.573.44-1.188.792-1.842 1.053l-.416 2.862a.554.554 0 01-.546.468H7.788a.554.554 0 01-.546-.468l-.416-2.862a6.952 6.952 0 01-1.842-1.053l-2.727 1.098a.553.553 0 01-.664-.24l-2.19-3.79a.557.557 0 01.127-.702l2.313-1.809c-.012-.351-.012-.702 0-1.054L.223 9.13a.557.557 0 01-.127-.702l2.19-3.79a.553.553 0 01.664-.24l2.727 1.098c.573-.44 1.188-.792 1.842-1.053l.416-2.862a.554.554 0 01.546-.468h4.438a.554.554 0 01.546.468l.416 2.862c.654.26 1.27.614 1.842 1.053l2.727-1.098a.553.553 0 01.664.24l2.19 3.79a.557.557 0 01-.127.702l-2.313 1.809z"/></svg>
+
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     COMPETITIONS
+═══════════════════════════════════════════════════ -->
+<section id="competitions">
+  <div class="si">
+    <div class="s-mono"><span>05 /</span> Beyond Academics</div>
+    <h2 class="s-title">Competitions &amp; <span class="sky-txt">Events</span></h2>
+
+    <div class="comp-card acr acr-plum fu">
+      <div class="noise"></div>
+      <div class="comp-trophy-box">🎭</div>
+      <div>
+        <div class="comp-year">2021 · All Sri Lanka Tamil Primary Teachers Association</div>
+        <div class="comp-title">"Thulir Vidum Natrukkal" Story telling Competition</div>
+        <div class="comp-body">
+          Represented <strong style="color:var(--t1)">KM/AK/Dr. Jalaldeen Vidyalaya</strong> at this prestigious island-wide event. Delivered a compelling and imaginative performance showcasing creativity, stage presence, and exceptional communication skills on a national platform.
         </div>
-        <h3 class="skill-name">React</h3>
-        <p class="skill-desc">Components, hooks, state management, routing, and building scalable single-page applications.</p>
-      </div>
-      <div class="skill-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="skill-icon-box" style="--sc:var(--purple)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.496 23.018a.557.557 0 01-.36-.184L.142 10.987a.557.557 0 010-.74L11.136.164a.557.557 0 01.807 0l3.649 3.918a.557.557 0 01-.006.745l-3.524 3.78a.557.557 0 00.402.949h4.592a.557.557 0 01.389.952l-5.276 5.488a.557.557 0 01-.36.184H.557A.557.557 0 010 16.8h10.413l4.815-5.01a.557.557 0 01.966.377v4.253a.557.557 0 01-.557.557h-4.16l4.384 4.56a.557.557 0 010 .74l-3.65 3.74a.557.557 0 01-.715 0z"/></svg>
-        </div>
-        <h3 class="skill-name">UI/UX Design</h3>
-        <p class="skill-desc">Figma, design systems, prototyping, accessibility, and creating intuitive user interfaces.</p>
-      </div>
-      <div class="skill-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="skill-icon-box" style="--sc:var(--amber)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22.162 2.5c.46 0 .838.378.838.838v17.324c0 .46-.378.838-.838.838H1.838A.838.838 0 011 20.662V3.338c0-.46.378-.838.838-.838h20.324zM18 6.5h-4v11h-2v-11H8V5h10v1.5z"/></svg>
-        </div>
-        <h3 class="skill-name">Responsive Design</h3>
-        <p class="skill-desc">Mobile-first approach, cross-browser compatibility, flexible layouts, and optimal performance.</p>
-      </div>
-      <div class="skill-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="skill-icon-box" style="--sc:var(--purple)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-        </div>
-        <h3 class="skill-name">Git & Version Control</h3>
-        <p class="skill-desc">Git workflows, collaboration, branching strategies, and CI/CD pipelines.</p>
+        <div class="comp-place">🏅 Secured 8th Place — Island-wide Competition</div>
       </div>
     </div>
   </div>
@@ -229,106 +307,63 @@
 <div class="strip"></div>
 
 <!-- ═══════════════════════════════════════════════════
-     PROJECTS
+     CERTIFICATIONS
 ═══════════════════════════════════════════════════ -->
-<section id="projects">
+<section id="certifications">
   <div class="si">
-    <div class="s-mono"><span>03 /</span> Work</div>
-    <h2 class="s-title">Featured <em>Projects</em></h2>
-    <div class="projects-grid">
-      <div class="project-card acr acr-neutral fu">
+    <div class="s-mono"><span>06 /</span> Recognition</div>
+    <h2 class="s-title">Certificates &amp; <em>Awards</em></h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-card acr acr-teal fu">
         <div class="noise"></div>
-        <div class="project-top">
-          <div class="project-dot-group">
-            <span class="pdot"></span><span class="pdot"></span><span class="pdot"></span>
+        <div class="cert-head">
+          <div class="cert-ico teal">📿</div>
+          <div>
+            <div class="cert-nm">Quran Completion Certificate</div>
+            <div class="cert-iss">Al Mathrasathul Dharul Ilm</div>
           </div>
-          <span class="project-lang">React</span>
         </div>
-        <h3 class="project-name">E-Commerce Dashboard</h3>
-        <p class="project-desc">A full-featured admin dashboard with real-time analytics, data visualization, and inventory management built with React and Chart.js.</p>
-        <div class="project-tags">
-          <span>React</span><span>Chart.js</span><span>CSS Modules</span>
-        </div>
+        <span class="cert-yr-tag teal">📅 2023</span>
       </div>
-      <div class="project-card acr acr-neutral fu">
+
+      <div class="cert-card acr acr-amber fu">
         <div class="noise"></div>
-        <div class="project-top">
-          <div class="project-dot-group">
-            <span class="pdot"></span><span class="pdot"></span><span class="pdot"></span>
+        <div class="cert-head">
+          <div class="cert-ico amber">🎓</div>
+          <div>
+            <div class="cert-nm">Outstanding Performance – Scholarship Exam</div>
+            <div class="cert-iss">Dheen Hypermarket Pvt Ltd, Addalaichenai</div>
           </div>
-          <span class="project-lang">JavaScript</span>
         </div>
-        <h3 class="project-name">Weather App</h3>
-        <p class="project-desc">Real-time weather application with geolocation, 7-day forecasts, and dynamic backgrounds that respond to current conditions.</p>
-        <div class="project-tags">
-          <span>JavaScript</span><span>API</span><span>CSS Grid</span>
-        </div>
+        <span class="cert-yr-tag amber">📅 2025</span>
       </div>
-      <div class="project-card acr acr-neutral fu">
+
+      <div class="cert-card acr acr-blue fu">
         <div class="noise"></div>
-        <div class="project-top">
-          <div class="project-dot-group">
-            <span class="pdot"></span><span class="pdot"></span><span class="pdot"></span>
+        <div class="cert-head">
+          <div class="cert-ico sky">🌐</div>
+          <div>
+            <div class="cert-nm">English Workshop Participant Certificate</div>
+            <div class="cert-iss">American College of Studies</div>
           </div>
-          <span class="project-lang">HTML/CSS</span>
         </div>
-        <h3 class="project-name">Portfolio Website</h3>
-        <p class="project-desc">This very portfolio — a dark-themed glassmorphism design with smooth animations, responsive layout, and full SEO optimization.</p>
-        <div class="project-tags">
-          <span>HTML5</span><span>CSS3</span><span>JS</span>
-        </div>
+        <span class="cert-yr-tag sky">📅 2026</span>
       </div>
+
     </div>
   </div>
 </section>
-
-<div class="strip"></div>
-
-<!-- ═══════════════════════════════════════════════════
-     SERVICES
-═══════════════════════════════════════════════════ -->
-<section id="services">
-  <div class="si">
-    <div class="s-mono"><span>04 /</span> What I Do</div>
-    <h2 class="s-title">My <em>Services</em></h2>
-    <div class="services-grid">
-      <div class="service-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="service-num">01</div>
-        <h3 class="service-name">Web Development</h3>
-        <p class="service-desc">Custom websites built from scratch with clean code, responsive design, and modern performance standards.</p>
-      </div>
-      <div class="service-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="service-num">02</div>
-        <h3 class="service-name">UI/UX Design</h3>
-        <p class="service-desc">User-centered interfaces designed with Figma, focusing on accessibility, usability, and visual appeal.</p>
-      </div>
-      <div class="service-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="service-num">03</div>
-        <h3 class="service-name">Responsive Implementation</h3>
-        <p class="service-desc">Converting designs into pixel-perfect responsive websites that work seamlessly across all devices.</p>
-      </div>
-      <div class="service-card acr acr-blue fu">
-        <div class="noise"></div>
-        <div class="service-num">04</div>
-        <h3 class="service-name">SEO Optimization</h3>
-        <p class="service-desc">On-page SEO, semantic HTML, structured data, and performance optimization for better search rankings.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="strip"></div>
 
 <!-- ═══════════════════════════════════════════════════
      CONTACT
 ═══════════════════════════════════════════════════ -->
 <section id="contact">
   <div class="si">
-    <div class="s-mono"><span>05 /</span> Get in Touch</div>
+    <div class="s-mono"><span>07 /</span> Get in Touch</div>
     <h2 class="s-title">Contact <em>Me</em></h2>
+
     <div class="contact-stack">
       <div class="contact-bar acr acr-blue fu">
         <div class="noise"></div>
@@ -336,7 +371,7 @@
           <div class="ci-icon">📧</div>
           <div>
             <div class="ci-label">Email</div>
-            <a href="mailto:riyazad@email.com" class="ci-value">riyazad@email.com</a>
+            <a href="mailto:riyasaddhafeeq@email.com" class="ci-value">riyasaddhafeeq@email.com</a>
           </div>
         </div>
         <div class="ci-div"></div>
@@ -344,20 +379,20 @@
           <div class="ci-icon">📍</div>
           <div>
             <div class="ci-label">Location</div>
-            <span class="ci-value">Sri Lanka</span>
+            <span class="ci-value">Addalaichenai, Sri Lanka</span>
           </div>
         </div>
         <div class="ci-div"></div>
         <div class="ci-item">
-          <div class="ci-icon">💻</div>
+          <div class="ci-icon">🏫</div>
           <div>
-            <div class="ci-label">Availability</div>
-            <span class="ci-value">Open to work</span>
+            <div class="ci-label">School</div>
+            <span class="ci-value">AK-AL/Arafa Vidyalaya</span>
           </div>
         </div>
       </div>
 
-      <form class="contact-form acr acr-blue fu" id="contact-form">
+      <form class="contact-form acr acr-amber fu" id="contact-form">
         <div class="noise"></div>
         <div class="form-row">
           <div class="form-group">
@@ -398,17 +433,10 @@
      FOOTER
 ═══════════════════════════════════════════════════ -->
 <footer>
-  <div class="foot-name">Riyazad Dhafeeq</div>
+  <div class="foot-name">Riyasad Dhafeeq <!-- <span>/ Student Portfolio</span>--> </div>
   <div class="foot-line"></div>
-  <p>Frontend Web Developer · Sri Lanka</p>
-  <div class="foot-social">
-    <a href="https://github.com/Riyasaddhafeeq" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-    <span class="foot-dot">·</span>
-    <a href="https://linkedin.com/in/riyasaddhafeeq" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-    <span class="foot-dot">·</span>
-    <a href="mailto:riyazad@email.com">Email</a>
-  </div>
-  <p style="margin-top:8px;font-size:.76rem;">&copy; 2026. All rights reserved.</p>
+  <p>Grade 6 · English Medium · <strong>AK-AL/Arafa Vidyalaya, Addalaichenai</strong></p>
+  <p style="margin-top:8px;font-size:.76rem;">© 2026. All Rights Reserved. Crafted with precision &amp; purpose.</p>
 </footer>
 
 <!-- ═══════════════════════════════════════════════════
@@ -425,7 +453,7 @@
         let n=0; const step=Math.ceil(target/30);
         const t=setInterval(()=>{
           n=Math.min(n+step,target);
-          el.textContent=n+'+';
+          el.textContent=n+(target===9?'+':'');
           if(n>=target) clearInterval(t);
         },55);
         io2.unobserve(el);
@@ -474,10 +502,11 @@
   window.addEventListener('scroll',()=>{
     let cur='';
     secs.forEach(s=>{ if(scrollY>=s.offsetTop-80) cur=s.id; });
-    navAs.forEach(a=>{ a.style.color=a.getAttribute('href')==='#'+cur?'var(--accent)':''; });
+    navAs.forEach(a=>{ a.style.color=a.getAttribute('href')==='#'+cur?'var(--amber)':''; });
   });
 
-  /* ── Acrylic Reveal Mouse Effect ───────── */
+  /* ── Acrylic Reveal Mouse Effect ─────────
+     Subtle radial highlight that follows the mouse inside acrylic cards */
   document.querySelectorAll('.acr').forEach(card=>{
     card.addEventListener('mousemove',e=>{
       const r=card.getBoundingClientRect();
@@ -502,10 +531,10 @@
     popupMsg.textContent = msg;
     popupIcon.textContent = isSuccess ? "✓" : "✗";
     popupIcon.style.background = isSuccess
-      ? "rgba(59,130,246,0.12)"
+      ? "rgba(45,212,191,0.12)"
       : "rgba(251,113,133,0.12)";
     popupIcon.style.borderColor = isSuccess
-      ? "rgba(59,130,246,0.3)"
+      ? "rgba(45,212,191,0.3)"
       : "rgba(251,113,133,0.3)";
     popupOverlay.style.display = "flex";
   }
