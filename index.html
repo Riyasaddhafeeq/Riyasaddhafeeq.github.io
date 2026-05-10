@@ -4,8 +4,27 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Riyasad Dhafeeq — Student Profile</title>
+  <meta property="og:title" content="Riyasad Dhafeeq — Student Portfolio">
+  <meta property="og:description" content="Grade 6 student at AK-AL/Arafa Vidyalaya. Scholarship passer, athlete, and aspiring achiever.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://riyasaddhafeeq.github.io">
+  <meta name="description" content="Personal student portfolio of Riyasad Dhafeeq — Grade 6, AK-AL/Arafa Vidyalaya, Addalaichenai.">
+  <meta name="google-site-verification" content="Mh81cgSYC2QB9mU8aBi5pJXZfPJNmb_bSrEe3QzcAxk" />
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-96x96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBJ9QLR64V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NBJ9QLR64V');
+  </script>
 </head>
 <body>
 
@@ -23,25 +42,26 @@
 <!-- ═══════════════════════════════════════════════════
      NAV
 ═══════════════════════════════════════════════════ -->
-<nav id="navbar">
-  <div class="nav-logo">RD <span>/ Portfolio</span></div>
-  <ul class="nav-links" id="navLinks">
+<nav id="navbar" aria-label="Main navigation">
+  <a href="/" class="nav-logo">RD <span>/ Portfolio</span></a>
+  <ul class="nav-links" id="navLinks" role="list">
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#achievements">Achievements</a></li>
     <li><a href="#sports">Sports</a></li>
     <li><a href="#competitions">Competitions</a></li>
     <li><a href="#certifications">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="hamburger" onclick="toggleMenu()">
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════
      ABOUT / STUDENT PROFILE  (first section — no hero)
 ═══════════════════════════════════════════════════ -->
-<section id="about" style="padding-top:110px;">
+<section id="about" style="padding-top:80px;">
   <div class="si">
     <div class="s-mono"><span>01 /</span> Student Profile</div>
     <h2 class="s-title">About <em>Me</em></h2>
@@ -337,88 +357,92 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="si">
+    <div class="s-mono"><span>07 /</span> Get in Touch</div>
+    <h2 class="s-title">Contact <em>Me</em></h2>
+
+    <div class="contact-stack">
+      <div class="contact-bar acr acr-blue fu">
+        <div class="noise"></div>
+        <div class="ci-item">
+          <div class="ci-icon">📧</div>
+          <div>
+            <div class="ci-label">Email</div>
+            <a href="mailto:riyasaddhafeeq@email.com" class="ci-value">riyasaddhafeeq@email.com</a>
+          </div>
+        </div>
+        <div class="ci-div"></div>
+        <div class="ci-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <div class="ci-label">Location</div>
+            <span class="ci-value">Addalaichenai, Sri Lanka</span>
+          </div>
+        </div>
+        <div class="ci-div"></div>
+        <div class="ci-item">
+          <div class="ci-icon">🏫</div>
+          <div>
+            <div class="ci-label">School</div>
+            <span class="ci-value">AK-AL/Arafa Vidyalaya</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form acr acr-amber fu" id="contact-form">
+        <div class="noise"></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is this about?">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="sendBtn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="strip"></div>
+
+<div id="popupOverlay" class="popup-overlay">
+  <div class="popup-card acr acr-neutral">
+    <div class="noise"></div>
+    <div class="popup-icon" id="popupIcon">✓</div>
+    <div class="popup-msg" id="popupMsg"></div>
+    <button class="popup-btn" onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════════════ -->
 <footer>
   <div class="foot-name">Riyasad Dhafeeq <!-- <span>/ Student Portfolio</span>--> </div>
   <div class="foot-line"></div>
   <p>Grade 6 · English Medium · <strong>AK-AL/Arafa Vidyalaya, Addalaichenai</strong></p>
-  <p style="margin-top:8px;font-size:.76rem;">© 2025 – 2026. All Rights Reserved. Crafted with precision &amp; purpose.</p>
+  <p style="margin-top:8px;font-size:.76rem;">© 2026. All Rights Reserved. Crafted with precision &amp; purpose.</p>
 </footer>
 
 <!-- ═══════════════════════════════════════════════════
      JAVASCRIPT
 ═══════════════════════════════════════════════════ -->
 <script>
-  /* ── Particle Constellation ──────────── */
-  (function(){
-    const cv = document.getElementById('hero-canvas');
-    if(!cv) return;
-    const ctx = cv.getContext('2d');
-    let W, H, pts=[];
-    function resize(){ W=cv.width=cv.offsetWidth; H=cv.height=cv.offsetHeight; }
-    resize(); window.addEventListener('resize', resize);
-
-    const N=90;
-    for(let i=0;i<N;i++) pts.push({
-      x:Math.random()*W, y:Math.random()*H,
-      vx:(Math.random()-.5)*.35, vy:(Math.random()-.5)*.35,
-      r:Math.random()*1.5+.4,
-      a:Math.random()*.8+.2
-    });
-
-    function draw(){
-      ctx.clearRect(0,0,W,H);
-      // Lines
-      for(let i=0;i<pts.length;i++){
-        for(let j=i+1;j<pts.length;j++){
-          const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y;
-          const d=Math.sqrt(dx*dx+dy*dy);
-          if(d<120){
-            ctx.beginPath();
-            ctx.moveTo(pts[i].x,pts[i].y);
-            ctx.lineTo(pts[j].x,pts[j].y);
-            ctx.strokeStyle=`rgba(245,158,11,${(1-d/120)*.12})`;
-            ctx.lineWidth=.6; ctx.stroke();
-          }
-        }
-      }
-      // Dots
-      pts.forEach(p=>{
-        ctx.beginPath();
-        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-        ctx.fillStyle=`rgba(245,158,11,${p.a*.6})`;
-        ctx.fill();
-        p.x+=p.vx; p.y+=p.vy;
-        if(p.x<0||p.x>W) p.vx*=-1;
-        if(p.y<0||p.y>H) p.vy*=-1;
-      });
-      requestAnimationFrame(draw);
-    }
-    draw();
-  })();
-
-  /* ── Typewriter role cycling ──────────── */
-  (function(){
-    const el = document.getElementById('roleText');
-    if(!el) return;
-    const roles=['Academic Achiever','Dedicated Student','Young Athlete','Presidential Scholar','Quran Graduate','Public Speaker'];
-    let ri=0, ci=0, deleting=false;
-    function tick(){
-      const full=roles[ri];
-      if(!deleting){
-        el.textContent=full.slice(0,++ci);
-        if(ci===full.length){ deleting=true; setTimeout(tick,1800); return; }
-        setTimeout(tick,80);
-      } else {
-        el.textContent=full.slice(0,--ci);
-        if(ci===0){ deleting=false; ri=(ri+1)%roles.length; setTimeout(tick,400); return; }
-        setTimeout(tick,40);
-      }
-    }
-    tick();
-  })();
-
   /* ── Counter animation ────────────────── */
   (function(){
     const els=document.querySelectorAll('[data-target]');
@@ -454,9 +478,17 @@
   window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
 
   /* ── Hamburger ─────────────────────────── */
-  function toggleMenu(){ document.getElementById('navLinks').classList.toggle('open'); }
+  function toggleMenu(){
+    const nav=document.getElementById('navLinks');
+    const btn=document.querySelector('.hamburger');
+    nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+  }
   document.querySelectorAll('.nav-links a').forEach(a=>
-    a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+    a.addEventListener('click',()=>{
+      document.getElementById('navLinks').classList.remove('open');
+      document.querySelector('.hamburger').setAttribute('aria-expanded','false');
+    }));
 
   /* ── Intersection observer (fade-up) ───── */
   const io=new IntersectionObserver(entries=>{
@@ -486,6 +518,64 @@
         `radial-gradient(280px circle at ${x}% ${y}%, rgba(255,255,255,.045), transparent 65%)`;
     });
     card.addEventListener('mouseleave',()=>{ card.style.backgroundImage=''; });
+  });
+
+  emailjs.init("Fh1P1nlPUB5MKLcgr");
+
+  const form = document.getElementById("contact-form");
+  const popupOverlay = document.getElementById("popupOverlay");
+  const popupMsg = document.getElementById("popupMsg");
+  const popupIcon = document.getElementById("popupIcon");
+
+  function showPopup(msg, isSuccess) {
+    popupMsg.textContent = msg;
+    popupIcon.textContent = isSuccess ? "✓" : "✗";
+    popupIcon.style.background = isSuccess
+      ? "rgba(45,212,191,0.12)"
+      : "rgba(251,113,133,0.12)";
+    popupIcon.style.borderColor = isSuccess
+      ? "rgba(45,212,191,0.3)"
+      : "rgba(251,113,133,0.3)";
+    popupOverlay.style.display = "flex";
+  }
+  window.closePopup = function() {
+    popupOverlay.style.display = "none";
+  };
+  popupOverlay.addEventListener("click", function(e) {
+    if (e.target === popupOverlay) closePopup();
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "ContactForm",
+      "ContactUS",
+      form
+    )
+
+    .then(() => {
+      return emailjs.send(
+        "ContactForm",
+        "Temp_autoreply",
+        {
+          name: form.name.value,
+          email: form.email.value,
+          subject: form.subject.value || "New Message",
+          message: form.message.value
+        }
+      );
+    })
+
+    .then(() => {
+      showPopup("Message sent successfully!", true);
+      form.reset();
+    })
+
+    .catch((error) => {
+      console.log(error);
+      showPopup("Failed to send message!", false);
+    });
   });
 </script>
 </body>
