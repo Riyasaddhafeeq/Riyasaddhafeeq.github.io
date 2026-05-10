@@ -53,7 +53,7 @@ I passed the **Grade 5 Scholarship** in 2025 and have been actively participatin
 ## 📌 GitHub Pages
 
 The website is hosted using **GitHub Pages**:  
-[https://yourusername.github.io](https://riyasaddhafeeq.github.io/)
+[https://riyasaddhafeeq.github.io](https://riyasaddhafeeq.github.io/)
 
 ---
 
